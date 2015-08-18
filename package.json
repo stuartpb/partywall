@@ -1,0 +1,22 @@
+{
+  "name": "partywall",
+  "version": "0.1.0",
+  "description": "A prollyfill for the HTML Parts and Walls spec.",
+  "main": "partywall-dom.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stuartpb/partywall.git"
+  },
+  "keywords": [
+    "wall"
+  ],
+  "author": "Stuart P. Bentley <stuart@testtrack4.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stuartpb/partywall/issues"
+  },
+  "homepage": "https://github.com/stuartpb/partywall"
+}
