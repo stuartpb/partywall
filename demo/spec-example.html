@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<div id="example-lotto" class="lotto" wall>
+  <div class="lid">
+    <span part="timer" id="example-lotto-timer">108:00</span>
+  </div>
+  <div part="bubble" wall id="example-lotto-bubble">
+    <div part="funnel" id="example-bubble-funnel">
+      <span class="ball">42</span>
+    </div>
+    <div part="track" id="example-running-track">
+      <span class="ball">23</span>
+      <span class="ball">16</span>
+    </div>
+  </div>
+  <div part="track" id="example-chosen-track">
+    <span class="ball">4</span>
+    <span class="ball">8</span>
+    <span class="ball">15</span>
+  </div>
+</div>
+<script src="../partywall-dom.js"></script>
+<script src="../partywall-style.js"></script>
+<script>
+/* global partywallStyler */
+var styler = partywallStyler();
+
+// Note that these styles aren't supposed to look good -
+// they're rules I made up off the top of my head in
+// http://discourse.wicg.io/t/html-parts-and-walls/1032/12
+// and I'll probably make them more elaborate later.
+styler.addStyle([['.lotto','.lid']],
+  'color: #800;');
+styler.addStyle([['.lotto','#timer']],
+  'font-size: 24px;');
+styler.addStyle([['.lotto','#bubble']],
+  'background-color: #0ff; border-radius: 999px;');
+styler.addStyle([['.lotto','#track']],
+  'border-bottom: 4px solid #999;');
+styler.addStyle([['.lotto','#bubble','#track']],
+  'border-bottom: 4px solid #777;');
+styler.addStyle([['.lotto','#bubble','#funnel']],
+  'background: #444;');
+styler.addStyle([['.lotto','#funnel']],
+  'border: red; color: red; background: red;');
+</script>
+</body>
+</html>
