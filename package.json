@@ -1,8 +1,8 @@
 {
   "name": "partywall",
   "version": "0.1.0",
-  "description": "A prollyfill for the HTML Parts and Walls spec.",
-  "main": "partywall-dom.js",
+  "description": "A prollyfill for the style aspects of the HTML Parts and Walls spec.",
+  "main": "partywall.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -1,24 +1,11 @@
 # partywall
 
-A prollyfill for the HTML Parts and Walls spec.
+A prollyfill for the style aspects of the HTML Parts and Walls spec.
 
-This prollyfill is split into two separate files: `partywall-dom.js` and
-`partywall-style.js`. These files are independent of one another: you may
-choose to only use `partywall-dom.js` if you are only using parts and walls
-for DOM access purposes, and/or `partywall-style.js` if you are only using
-parts and walls for CSS style encapsulation.
+For the DOM aspects of the HTML Parts and Walls spec, see
+[getpart-polyfill[(https://github.com/stuartpb/getpart-polyfill).
 
-## Using partywall-dom.js
-
-`partywall-dom.js` implements the `getPart` function on elements, as well as
-setters and getters for the `part` and `wall` properties. To use it, include
-the script and use the DOM properties as specified by the spec.
-
-## Using partywall-style.js
-
-This script is significantly more complicated than partywall-dom.js, as it adds
-live information to all elements on the page and updates a global stylesheet
-to apply styles to any of these elements that would match the given selector.
+## Using partywall.js
 
 To start using this script, call the `partywallStyler()` function it adds to
 the global environment. This will populate the needed information for all
@@ -34,7 +21,7 @@ contents will be concatenated with spaces.) The `style` argument is the
 string of CSS style properties, like what you would assign to a `style`
 property on an element.
 
-### Known limitations
+## Known limitations
 
 - Part selectors specified as an ID do not increase specificity the way the
   spec states they should.
