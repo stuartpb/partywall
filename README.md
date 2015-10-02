@@ -3,7 +3,7 @@
 A prollyfill for the style aspects of the HTML Parts and Walls spec.
 
 For the DOM aspects of the HTML Parts and Walls spec, see
-[getpart-polyfill[(https://github.com/stuartpb/getpart-polyfill).
+[getpart-polyfill](https://github.com/stuartpb/getpart-polyfill).
 
 ## Using partywall.js
 
