@@ -107,7 +107,7 @@ function partywallStyler (opts) {
   }
 
   function childWallDepth(element) {
-    var depth = +element.dataset.partywallDepth;
+    var depth = +element.getAttribute('data-partywall-depth');
     return (element.getAttribute(wallName) === null) ? depth : depth + 1;
   }
 
@@ -150,7 +150,7 @@ function partywallStyler (opts) {
   }
 
   function updateTreeWallDepths(root, depth) {
-    root.dataset.partywallDepth = depth;
+    root.setAttribute('data-partywall-depth', depth);
     return updateListWallDepths(root.children, childWallDepth(root));
   }
 
